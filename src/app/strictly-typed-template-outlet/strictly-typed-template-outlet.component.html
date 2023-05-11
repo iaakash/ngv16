@@ -1,0 +1,11 @@
+<ng-container *ngTemplateOutlet="myTemplateRef; context: {$implicit: 'test', xxx: 'xxx'}">
+
+</ng-container>
+
+<ng-template #myTemplateRef let-carname let-x1="xxx">
+    <!-- load car details:
+    <strong> {{carname}}</strong> <br>
+    <strong>{{carengine}}</strong> -->
+    <strong> {{carname}}</strong>
+    <strong>{{x1}}</strong>
+</ng-template>

@@ -1,0 +1,17 @@
+<nav>
+  <ul>
+    <li><img src="assets/ng-logo.png" alt=""></li>
+    <li [routerLink]="['req-input-demo']">Required Inputs</li>
+    <li [routerLink]="['product', 3]">Magnificient Router</li>
+    <li [routerLink]="['auto-unsubscribe']">Auto Unsubscribe</li>
+    <li [routerLink]="['take-until-destroyed']">TakeUntilDestroyed</li>
+    <li  [routerLink]="['old-classbased-guard']">Class based guard(deprecated)</li>
+    <li [routerLink]="['functional-guard']">Functional guard</li>
+    <li [routerLink]="['strict-template-outlet']">Strictly typed ngTemplateOutlet</li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>Demo</h1>
+  <router-outlet></router-outlet>
+</div>
